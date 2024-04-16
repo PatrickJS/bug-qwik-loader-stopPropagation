@@ -13,6 +13,7 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "incremental": true,
+    "noImplicitAny": false,
     "isolatedModules": true,
     "outDir": "tmp",
     "noEmit": true,
