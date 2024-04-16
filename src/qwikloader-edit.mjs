@@ -1,27 +1,4 @@
-// Event.prototype.stopPropagation = function _stopPropagation() {
-//   this.cancelBubble = true;
-// };
-// PointerEvent.prototype.stopPropagation = function _stopPropagation() {
-//   this.cancelBubble = true;
-//   // console.log("stopPropagation", this.cancelBubble);
-// };
-// PointerEvent.prototype._cancelBubble = false;
-// Object.defineProperty(PointerEvent.prototype, "cancelBubble", {
-//   get: function () {
-//     return this._cancelBubble;
-//   },
-//   set: function (v) {
-//     // console.log("set cancelBubble", v);
-//     if (v === false) {
-//       debugger;
-//     }
-//     this._cancelBubble = v;
-//     // if (v) {
-//     //   this.stopPropagation();
-//     // }
-//   },
-// });
-(() => {
+export default (() => {
   ((doc, hasInitialized) => {
     const Q_CONTEXT = "__q_context__";
     const win = window;

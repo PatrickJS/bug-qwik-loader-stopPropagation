@@ -5,7 +5,7 @@ import {
   ServiceWorkerRegister,
 } from "@builder.io/qwik-city";
 import { RouterHead } from "./components/router-head/router-head";
-import QwikLoader from "./qwikloader-edit?raw";
+import QwikLoader from "./qwikloader-edit.mjs?raw";
 
 import "./global.css";
 
@@ -23,7 +23,7 @@ export default component$(() => {
         <meta charSet="utf-8" />
         <link rel="manifest" href="/manifest.json" />
         <RouterHead />
-        <script dangerouslySetInnerHTML={QwikLoader}></script>
+        <script type="module" dangerouslySetInnerHTML={QwikLoader}></script>
       </head>
       <body lang="en">
         <RouterOutlet />
